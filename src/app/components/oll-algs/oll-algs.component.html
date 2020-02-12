@@ -1,0 +1,10 @@
+
+  <h3>OLL Algorithm List</h3>
+  <div *ngFor="let ollAlg of ollAlgs; index as name">
+
+    <h3>
+      <a [title]="ollAlg.name + ' details'" [routerLink]="['/ollAlgs', ollAlg.name]">
+        {{ ollAlg.name }}
+      </a>
+    </h3>
+  </div>

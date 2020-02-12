@@ -1,0 +1,8 @@
+<div *ngFor="let pllAlg of pllAlgs; index as name">
+
+    <h3>
+      <a [title]="pllAlg.name + ' perm details'" [routerLink]="['/pllAlgs', pllAlg.name]">
+        {{ pllAlg.name }}
+      </a>
+    </h3>
+  </div>
